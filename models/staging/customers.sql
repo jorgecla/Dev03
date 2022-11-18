@@ -34,7 +34,8 @@ final as (
         cast( 10 as numeric(18,2)) as last_name,
         customer_orders.first_order_date,
         customer_orders.most_recent_order_date,
-        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders,
+        'test' as test_col
 
     from customers
 
