@@ -1,5 +1,5 @@
 select
-    case when id=1 then 200001 else id end  as customer_id,
+    id  as customer_id,
     first_name,
     last_name
 
